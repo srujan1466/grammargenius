@@ -188,6 +188,7 @@ session_start();
             <?php
             if (isset($_SESSION["username"])) {
                 echo "<p style='font-size: 1.2rem;'>Hello, <strong>" . htmlspecialchars($_SESSION["username"]) . "</strong>!</p>";
+                echo "<br>";
                 echo "<button class='btn btn-primary' onclick=\"window.location.href='../php/logout.php'\">Logout</button>";
 
             } else {
